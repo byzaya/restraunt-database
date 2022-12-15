@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B34A2AD-638A-407D-97B1-7CAF694C9405}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KursDB</RootNamespace>
+    <AssemblyName>KursDB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFood.Designer.cs">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFoodToOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFoodToOrder.Designer.cs">
+      <DependentUpon>AddFoodToOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddIngr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddIngr.Designer.cs">
+      <DependentUpon>AddIngr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTechMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTechMap.Designer.cs">
+      <DependentUpon>AddTechMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeFood.Designer.cs">
+      <DependentUpon>ChangeFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeIngr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeIngr.Designer.cs">
+      <DependentUpon>ChangeIngr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CookForm.Designer.cs">
+      <DependentUpon>CookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DelEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelEmployee.Designer.cs">
+      <DependentUpon>DelEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelFood.Designer.cs">
+      <DependentUpon>DelFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelIngr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelIngr.Designer.cs">
+      <DependentUpon>DelIngr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hash.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestrauntDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestrauntDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WaiterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaiterForm.Designer.cs">
+      <DependentUpon>WaiterForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddFood.resx">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFoodToOrder.resx">
+      <DependentUpon>AddFoodToOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddIngr.resx">
+      <DependentUpon>AddIngr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTechMap.resx">
+      <DependentUpon>AddTechMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeFood.resx">
+      <DependentUpon>ChangeFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeIngr.resx">
+      <DependentUpon>ChangeIngr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CookForm.resx">
+      <DependentUpon>CookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelEmployee.resx">
+      <DependentUpon>DelEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelFood.resx">
+      <DependentUpon>DelFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelIngr.resx">
+      <DependentUpon>DelIngr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaiterForm.resx">
+      <DependentUpon>WaiterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RestrauntDataSet.xsc">
+      <DependentUpon>RestrauntDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet.xss">
+      <DependentUpon>RestrauntDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet1.xsc">
+      <DependentUpon>RestrauntDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet1.xss">
+      <DependentUpon>RestrauntDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet10.xsc">
+      <DependentUpon>RestrauntDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet10.xss">
+      <DependentUpon>RestrauntDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet11.xsc">
+      <DependentUpon>RestrauntDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet11.xss">
+      <DependentUpon>RestrauntDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet12.xsc">
+      <DependentUpon>RestrauntDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet12.xss">
+      <DependentUpon>RestrauntDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet13.xsc">
+      <DependentUpon>RestrauntDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet13.xss">
+      <DependentUpon>RestrauntDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet14.xsc">
+      <DependentUpon>RestrauntDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet14.xss">
+      <DependentUpon>RestrauntDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet15.xsc">
+      <DependentUpon>RestrauntDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet15.xss">
+      <DependentUpon>RestrauntDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet16.xsc">
+      <DependentUpon>RestrauntDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet16.xss">
+      <DependentUpon>RestrauntDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet17.xsc">
+      <DependentUpon>RestrauntDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet17.xss">
+      <DependentUpon>RestrauntDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet18.xsc">
+      <DependentUpon>RestrauntDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet18.xss">
+      <DependentUpon>RestrauntDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet19.xsc">
+      <DependentUpon>RestrauntDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet19.xss">
+      <DependentUpon>RestrauntDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet2.xsc">
+      <DependentUpon>RestrauntDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet2.xss">
+      <DependentUpon>RestrauntDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet20.xsc">
+      <DependentUpon>RestrauntDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet20.xss">
+      <DependentUpon>RestrauntDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet21.xsc">
+      <DependentUpon>RestrauntDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet21.xss">
+      <DependentUpon>RestrauntDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet22.xsc">
+      <DependentUpon>RestrauntDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet22.xss">
+      <DependentUpon>RestrauntDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet23.xsc">
+      <DependentUpon>RestrauntDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet23.xss">
+      <DependentUpon>RestrauntDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet24.xsc">
+      <DependentUpon>RestrauntDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet24.xss">
+      <DependentUpon>RestrauntDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet3.xsc">
+      <DependentUpon>RestrauntDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet3.xss">
+      <DependentUpon>RestrauntDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet4.xsc">
+      <DependentUpon>RestrauntDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet4.xss">
+      <DependentUpon>RestrauntDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet5.xsc">
+      <DependentUpon>RestrauntDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet5.xss">
+      <DependentUpon>RestrauntDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet6.xsc">
+      <DependentUpon>RestrauntDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet6.xss">
+      <DependentUpon>RestrauntDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet7.xsc">
+      <DependentUpon>RestrauntDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet7.xss">
+      <DependentUpon>RestrauntDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet8.xsc">
+      <DependentUpon>RestrauntDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet8.xss">
+      <DependentUpon>RestrauntDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet9.xsc">
+      <DependentUpon>RestrauntDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="RestrauntDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestrauntDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestrauntDataSet9.xss">
+      <DependentUpon>RestrauntDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\lock.png" />
+    <Content Include="images\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
